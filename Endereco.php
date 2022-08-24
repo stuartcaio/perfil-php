@@ -1,11 +1,11 @@
 <?php
 
     class endereco{
-        public $país;
-        public $estado;
-        public $cidade;
-        public $bairro;
-        public $rua;
+        private $país;
+        private $estado;
+        private $cidade;
+        private $bairro;
+        private $rua;
     
         public function __construct(string $país, string $estado, string $cidade, string $bairro, string $rua)
         {

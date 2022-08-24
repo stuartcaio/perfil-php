@@ -1,14 +1,11 @@
 <?php
 
     class Professor extends perfil{
-        public $especializacao;
+        private $especializacao;
 
         public function __construct(string $nome, string $cpf, int $idade, $endereco, string $especializacao)
         {
-            $this -> nome = $nome;
-            $this -> cpf = $cpf;
-            $this -> idade = $idade;
-            $this -> endereco = $endereco;
+            parent::__construct($nome, $cpf, $idade, $endereco);
             $this -> especializacao = $especializacao;
         }
     }

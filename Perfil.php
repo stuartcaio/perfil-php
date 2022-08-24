@@ -1,10 +1,10 @@
 <?php 
 
     class Perfil {
-        public $nome;
-        public $cpf;
-        public $idade;
-        public $endereco;
+        private $nome;
+        private $cpf;
+        private $idade;
+        private $endereco;
 
         public function __construct(string $nome, string $cpf, int $idade, $endereco)
         {

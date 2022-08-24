@@ -1,14 +1,11 @@
 <?php 
 
     class Aluno extends Perfil{
-        public $curso;
+        private $curso;
 
         public function __construct(string $nome, string $cpf, int $idade, $endereco, string $curso)
         {
-            $this -> nome = $nome;
-            $this -> cpf = $cpf;
-            $this -> idade = $idade;
-            $this -> endereco = $endereco;
+            parent::__construct($nome, $cpf, $idade, $endereco);
             $this -> curso = $curso;
         }
     }

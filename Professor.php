@@ -8,6 +8,10 @@
             parent::__construct($nome, $cpf, $idade, $endereco);
             $this -> especializacao = $especializacao;
         }
+
+        public function __get(string $atributo){   
+            return $this->$atributo;         
+        }
     }
 
 ?>

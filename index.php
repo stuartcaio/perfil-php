@@ -28,4 +28,17 @@
 
     print_r($perfil3);
 
+    pulaLinha();
+    pulaLinha();
+    pulaLinha();
+
+    echo '<h3>'.$perfil1->curso.'</h3>';
+
+    pulaLinha();
+
+    echo '<h3>'.$perfil2->curso.'</h3>';
+
+    pulaLinha();
+
+    echo '<h3>'.$perfil3->especializacao.'</h3>';
 ?>
